@@ -1,0 +1,173 @@
+* {
+    box-sizing: border-box;
+}
+
+body,html {
+    padding:0;
+    margin: 0;
+    background-color: black;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#main {
+    background-image: linear-gradient(to bottom, rgba(3, 2, 2, 0.616), rgba(3, 3, 3, 0.548)), url('img/netflix-image.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    object-fit: cover;
+    background-position:0px;
+    padding: 20px;
+    margin: auto;
+    /* margin-bottom: none; */
+}
+
+.header {
+    display: block;
+}
+/* .curve {
+    transform: rotate(20deg);
+    color: white;
+} */
+.head {
+    color: red;
+    font-weight: bolder;
+    font-size: 30px;
+
+}
+.signin {
+    float: right;
+    background-color: red;
+    color: white;
+    border: none;
+    padding: 8px;
+    border-radius: 3px;
+}
+.in {
+    display: none;
+}
+
+.headercontent {
+    text-align: center;
+    color: white;
+
+}
+.small {
+    font-size: 10px;
+}
+#email {
+    padding: 10px;
+    width: 25%;
+}
+#submit {
+    background-color: red;
+    font-weight: 40px;
+    font-size: 18px;
+    padding: 7px;
+    border: none;
+    color: white;
+
+}
+
+/* #body {
+    background-color: black;
+    color: white;
+} */
+#hr {
+    background-color: rgb(34, 34, 34);
+    height: 4px;
+    border: none;
+}
+#body1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 30px 30px 0px 30px;
+    color: white;
+    height: 10%;
+}
+.text {
+    justify-content: center;
+}
+.text p {
+    font-size: 19px;
+}
+.image img {
+    height: 70%;
+    width: 70%;
+}
+form {
+    height:auto;
+}
+#body2 {
+    color: white;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 30px 30px 0px 30px;
+    color: white;
+    height: 10%;
+}
+#body2 img {
+    width: 80%;
+    height: 80%;
+}
+
+#body3 {
+    justify-content: left;
+    color: white;
+    padding: 30px 30px 0px 30px;
+}
+#body4 img {
+    width: 80%;
+    height: 80%;
+}
+#body4 {
+    color: white;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 30px 30px 0px 30px;
+    color: white;
+    height: 10%;
+}
+#faq {
+    justify-content: center;
+    color: white;
+    padding: 30px 90px 0px 60px;
+}
+
+#text4 {
+    background-color: gray;
+    font-size: 15px;
+    padding-top: 0.1px;
+    padding-bottom: 0.1px;
+    
+}
+.plus {
+    float: right;
+}
+
+/* media queries */
+@media screen and (max-width: 768px) {
+    #body1 {
+        grid-template-columns: 2fr;
+     height: auto;
+    }
+    .text {
+        padding: 0;
+    }
+    .text p {
+        font-size: 12px;
+    }
+    .text h2 {
+      font-size:27px;  
+    }
+    .image img {
+        height: 50%;
+    }
+   
+    #email {
+        width: 70%;
+        margin: 5px;
+    }
+    .in {
+        display: block;
+    }
+    
+}
